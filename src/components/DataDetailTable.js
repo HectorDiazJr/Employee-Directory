@@ -1,8 +1,10 @@
 import React from "react";
 import DataDetail from "./DataDetail";
 
-function DataDetailTable(headings, users, handleSort) {
+function DataDetailTable({headings, users, handleSort}) {
 
+    return (
+    <div>
     <table>
         <thead>
           <tr>
@@ -27,5 +29,7 @@ function DataDetailTable(headings, users, handleSort) {
 
         <DataDetail users={users}/>
     </table>
+    </div>
+    );
 }
 export default DataDetailTable;

@@ -1,12 +1,13 @@
 import React from "react";
 
-function Nav({ handlesearch }) {
+function Nav({ handleSearch }) {
     return(
         <nav>
             <div>
                 <form>
                     <input className="form-control"
-                    onChange={e => handlesearch(e)}
+                    // handleSearch={handleSearch}
+                    onChange={e => handleSearch(e)}
                     // value={props.search}
                     name="search"
                     type="search"
