@@ -13,7 +13,7 @@ export default class NameContainer extends React.Component {
         filteredUsers: [{ }]
     }
     headings = [
-        { name: "Image", width: "20%" },
+        { name: "", width: "5%" },
         { name: "Name", width: "20%" },
         { name: "Phone", width: "20%" },
         { name: "Email", width: "20%" },

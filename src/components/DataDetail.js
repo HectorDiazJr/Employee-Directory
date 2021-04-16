@@ -1,4 +1,5 @@
 import React from "react";
+import "./DataDetail.css";
 
 function DataDetail({ users }) {
 
@@ -18,25 +19,25 @@ function DataDetail({ users }) {
         users.map(({ login, name, picture, phone, email, dob }) => {
           return (
             <tr key={login.uuid}>
-              <td data-th="Image" className="align-middle">
+              <td data-th="Image" className="align-middle box">
                 <img
-                  src={picture.medium}
+                  src={picture.large}
                   alt={"profile image for " + name.first + " " + name.last}
                   className="img-responsive"
                 />
               </td>
-              <td data-th="Name" className="name-cell align-middle">
+              <td data-th="Name" className="name-cell align-middle box">
                 {name.first} {name.last}
               </td>
-              <td data-th="Phone" className="align-middle">
+              <td data-th="Phone" className="align-middle box">
                 {phone}
               </td>
-              <td data-th="Email" className="align-middle">
+              <td data-th="Email" className="align-middle box">
                 <a href={"mailto:" + email} target="__blank">
                   {email}
                 </a>
               </td>
-              <td data-th="DOB" className="align-middle">
+              <td data-th="DOB" className="align-middle box">
                 {formatDate(dob.date)}
               </td>
             </tr>

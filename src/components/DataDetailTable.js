@@ -1,5 +1,6 @@
 import React from "react";
 import DataDetail from "./DataDetail";
+import "./DataDetailTable.css"
 
 function DataDetailTable({headings, users, handleSort}) {
 
